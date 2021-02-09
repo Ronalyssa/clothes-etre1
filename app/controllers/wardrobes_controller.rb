@@ -1,0 +1,3 @@
+class WardrobesController < ApplicationController
+  
+end

@@ -1,0 +1,3 @@
+class OutfitsController < ApplicationController
+  
+end
