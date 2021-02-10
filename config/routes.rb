@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   post("/login", {to:"users#login"}) 
 
-  resources :wardrobe_oufits
+  resources :wardrobe_outfits
   resources :wardrobes
   resources :outfits
   resources :bottoms

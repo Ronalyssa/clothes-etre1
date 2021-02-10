@@ -44,7 +44,7 @@ ActiveRecord::Schema.define(version: 2021_02_09_213330) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "wardrobe_oufits", force: :cascade do |t|
+  create_table "wardrobe_outfits", force: :cascade do |t|
     t.integer "wardrobe_id"
     t.integer "outfit_id"
     t.datetime "created_at", precision: 6, null: false

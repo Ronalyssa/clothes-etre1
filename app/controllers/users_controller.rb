@@ -10,7 +10,7 @@ class UsersController < ApplicationController
 
   # GET /users/1
   def login
-    user = user.find_by(username: params[:username])
+    user = User.find_by({username: params[:username]})
     if user && user.authenticate(params[:password])
         render json: user, include: [:tops, :bottoms, :wardrobes]
     end
