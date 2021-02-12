@@ -12,7 +12,7 @@ class UsersController < ApplicationController
   def login
     user = User.find_by({username: params[:username]})
     if user && user.authenticate(params[:password])
-        render json: user, include: [:tops, :bottoms, :wardrobes]
+        render json: user, include: [:tops, :bottoms, :outfits, :wardrobes]
     end
   end
 

@@ -20,8 +20,8 @@ bottom4 = Bottom.create(name: "Burgundy Dress Pants", image: "BurgundyMensDressP
 
 outfit1 = Outfit.create(name: "Business Casual", top_id: top1.id, bottom_id: bottom1.id, user_id: ronalyssa.id)
 outfit2 = Outfit.create(name: "Casual", top_id: top2.id, bottom_id: bottom2.id, user_id: ronalyssa.id)
-outfit3 = Outfit.create(name: "Burgundy Suit", top_id: top3.id, bottom_id: bottom3.id, user_id: max.id)
-outfit4 = Outfit.create(name: "Workout Wear", top_id: top4.id, bottom_id: bottom4.id, user_id: max.id)
+outfit3 = Outfit.create(name: "Burgundy Suit", top_id: top4.id, bottom_id: bottom4.id, user_id: max.id)
+outfit4 = Outfit.create(name: "Workout Wear", top_id: top3.id, bottom_id: bottom3.id, user_id: max.id)
 
 
 work = Wardrobe.create(name: "Work", user_id: ronalyssa.id)

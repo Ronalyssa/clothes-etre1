@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   post("/login", {to:"users#login"}) 
+  post("/get_outfits", {to:"wardrobe_outfits#get_outfits"}) 
 
   resources :wardrobe_outfits
   resources :wardrobes
