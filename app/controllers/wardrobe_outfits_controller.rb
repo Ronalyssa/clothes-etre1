@@ -9,10 +9,7 @@ class WardrobeOutfitsController < ApplicationController
                 wardrobe_outfits.push(wo)
             end
         end
-        
-        #wardrobe_outfits = all_wardrobe_outfits.select{|wo| wo.wardrobe_id === params[:wardrobe_id]}
-        #byebug
-        #puts wardrobe_outfits
+    
         render json: wardrobe_outfits
        
     end

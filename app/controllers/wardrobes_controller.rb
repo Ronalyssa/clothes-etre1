@@ -1,4 +1,5 @@
 class WardrobesController < ApplicationController
+  
     def index
         wardrobes = Wardrobe.all
     
