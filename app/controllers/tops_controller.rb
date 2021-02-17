@@ -12,8 +12,9 @@ class TopsController < ApplicationController
     
 
     def create
-      # byebug
-        top = Top.new(top_params)
+       byebug
+      puts "hello"
+        top = Top.new(params[:name, :image, :user_id])
         if top.save 
             render json: top, except: [:created_at, :updated_at]
         else
