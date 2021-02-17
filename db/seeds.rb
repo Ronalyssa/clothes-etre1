@@ -12,6 +12,8 @@ top1 = Top.create(name: "Black V-Neck Blouse", image: "BlackVneckBlouse.jpg", us
 top2 = Top.create(name: "Black Short Sleeve T-Shirt", image: "BlackShortSleeveTshirt.jpg", user_id: ronalyssa.id)
 top3 = Top.create(name: "Blue T-Shirt", image: "BlueMensTshirt.jpeg", user_id: max.id)
 top4 = Top.create(name: "Burgundy Sports Coat", image: "BurgundyMensSportsCoat.jpg", user_id: max.id)
+top5 = Top.create(name: "Yellow Top", image: "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F9f%2Fda%2F9fdad36e5686486d69217c2a495aad45040c8edd.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/fullscreen]", user_id: ronalyssa.id)
+
 
 bottom1 = Bottom.create(name: "Beige Wide Leg Pants", image: "BeigeWideLegPants.jpeg", user_id: ronalyssa.id)
 bottom2 = Bottom.create(name: "Black Cargo Pants", image: "BlackCargoPants.jpg", user_id: ronalyssa.id)
