@@ -7,7 +7,7 @@ class TopsController < ApplicationController
   end
 
   def show
-    top = Top.find_by(params[:id])
+    top = Top.find(params[:id])
     render json: top
   end
   
@@ -15,7 +15,8 @@ class TopsController < ApplicationController
   def create
     #  byebug
     # puts "hello"
-    top = Top.new(params[:name, :image, :user_id])
+    # top = Top.new(params[:name, :image, :user_id])
+    top = Top.new(top_params)
     if top.save 
       render json: top, except: [:created_at, :updated_at]
     else
@@ -24,7 +25,7 @@ class TopsController < ApplicationController
   end
 
   def update
-    top = Top.find_by(params[:name, :image, :user_id])
+    top = Top.find(params[:id])
 
     if top.update[top_params]
       render json:top
@@ -34,7 +35,7 @@ class TopsController < ApplicationController
   end
 
   def destroy
-    top = Top.find_by(params[:id])
+    top = Top.find(params[:id])
     if top.destroy
       render json: top
     else

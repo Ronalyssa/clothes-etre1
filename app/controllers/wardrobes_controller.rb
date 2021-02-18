@@ -6,7 +6,7 @@ class WardrobesController < ApplicationController
     end
     
     def show
-      wardrobe = Wardrobe.find_by(params[:id])
+      wardrobe = Wardrobe.find(params[:id])
       render json: wardrobe
     end
     
@@ -23,7 +23,7 @@ class WardrobesController < ApplicationController
     end
   
     def update
-      wardrobe = Wardrobe.find_by(params[:name, :image, :user_id])
+      wardrobe = Wardrobe.find(params[:id])
   
       if wardrobe.update[wardrobe_params]
         render json:wardrobe
@@ -33,7 +33,7 @@ class WardrobesController < ApplicationController
     end
   
     def destroy
-      wardrobe = Wardrobe.find_by(params[:id])
+      wardrobe = Wardrobe.find(params[:id])
       if wardrobe.destroy
         render json: wardrobe
       else

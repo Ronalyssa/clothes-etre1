@@ -6,7 +6,7 @@ class OutfitsController < ApplicationController
   end
 
   def show
-    outfit = Outfit.find_by(params[:id])
+    outfit = Outfit.find(params[:id])
     render json: outfit
   end
   
@@ -23,7 +23,7 @@ class OutfitsController < ApplicationController
   end
 
   def update
-    outfit = Outfit.find_by(params[:name, :image, :user_id])
+    outfit = Outfit.find(params[:id])
 
     if outfit.update[outfit_params]
       render json:outfit
@@ -33,9 +33,14 @@ class OutfitsController < ApplicationController
   end
 
   def destroy
-    outfit = Outfit.find_by(params[:id])
-    if outfit.destroy
-      render json: outfit
+    outfit = Outfit.find(params[:id])
+    if outfit
+      wo = WardrobeOutfit.where({outfit_id: outfit.id}) 
+      wo.each do |w|
+        w.destroy
+      end
+      outfit.destroy
+      render json: "Successfully deleted oufit."
     else
       render json: {error: "Something went wrong."}
     end

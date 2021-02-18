@@ -16,6 +16,22 @@ class WardrobeOutfitsController < ApplicationController
         render json: wardrobe_outfits
        
     end
+
+      
+    def destroy
+        wardrobe_outfit = WardrobeOutfit.find(params[:id])
+
+        if wardrobe_outfit
+            outfit = Outfit.find(wardrobe_outfit.wardrobe_id)
+            outfit.destroy
+            wardrobe_outfit.destroy
+            render json: "Sucessfull!"
+        else
+          render json: {error: "Something went wrong."}
+        end
+      end
+
+
     
   
 end

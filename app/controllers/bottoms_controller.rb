@@ -7,7 +7,7 @@ class BottomsController < ApplicationController
   end
     
   def show
-    bottom = Bottom.find_by(params[:id])
+    bottom = Bottom.find(params[:id])
     render json: bottom
   end
   
@@ -24,7 +24,7 @@ class BottomsController < ApplicationController
   end
 
   def update
-    bottom = Bottom.find_by(params[:name, :image, :user_id])
+    bottom = Bottom.find(params[:id])
 
     if bottom.update[bottom_params]
       render json:bottom
@@ -34,7 +34,7 @@ class BottomsController < ApplicationController
   end
 
   def destroy
-    bottom = Bottom.find_by(params[:id])
+    bottom = Bottom.find(params[:id])
     if bottom.destroy
       render json: bottom
     else
