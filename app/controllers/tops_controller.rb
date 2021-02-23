@@ -8,7 +8,8 @@ class TopsController < ApplicationController
     
       def show
         top = Top.find(params[:id])
-        render json: top
+        render json: top.to_json(only: [:name, :image, :user_id, :id],
+                                include: [user: { only: [:id, :username, :password]}])
       end
       
     

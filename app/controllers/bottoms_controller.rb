@@ -8,7 +8,8 @@ class BottomsController < ApplicationController
         
       def show
         bottom = Bottom.find(params[:id])
-        render json: bottom
+        render json: bottom.to_json(only: [:name, :image, :user_id, :id],
+                                    include: [user: { only: [:id, :username, :password]}])
       end
       
     
