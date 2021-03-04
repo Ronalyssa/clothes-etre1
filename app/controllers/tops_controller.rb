@@ -21,7 +21,7 @@ class TopsController < ApplicationController
         if top.save 
           render json: top, except: [:created_at, :updated_at]
         else
-          render json: [error: "Something went wrong."]
+          render json: top.errors, status: :unprocessable_entity
         end
       end
     

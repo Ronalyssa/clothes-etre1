@@ -1,6 +1,20 @@
 Rails.application.routes.draw do
 
-  post("/login", {to:"users#login"}) 
+
+
+  namespace :api do
+    namespace :v1 do
+      # not sure if closet or tops/bottoms or even users for below ???????
+      resources :tops 
+      post '/auth', to: 'auth#create'
+
+      get '/current_user', to: 'auth#show'
+    end
+  end
+
+
+
+  # post("/login", {to:"users#login"}) 
   # resources :wardrobe_outfits
   # resources :wardrobes
   # resources :outfits
