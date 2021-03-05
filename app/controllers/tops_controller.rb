@@ -27,8 +27,8 @@ class TopsController < ApplicationController
     
       def update
         top = Top.find(params[:id])
-    
-        if top.update[top_params]
+        # byebug
+        if top.update(top_params)
           render json:top
         else
           render json: {error: "Something went wrong."}
