@@ -16,17 +16,19 @@ Bottom.destroy_all
 ronalyssa = User.create(username: "ronalyssa", password: "hello")
 max = User.create(username: "max", password: "alo")
 
-top21 = Top.create(name: "Black Short Sleeved Shirt", image: "BlackShortSleeveTshirt.jpg", user_id: ronalyssa.id)
+
 top1 = Top.create(name: "ARISTICAT HOODIE", image: "https://lp2.hm.com/hmgoepprod?set=source[/f3/aa/f3aaf3d9a54a1e0848806b4afd5994f58cf78f79.jpg],origin[dam],category[],type[LOOKBOOK],res[y],hmver[1]&call=url[file:/product/main]", user_id: ronalyssa.id)
-top2 = Top.create(name: "GREY LAVENDER HOODIE", image: "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F12%2F8a%2F128aade6353848c8130b6848771405fb3ab1a025.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/fullscreen]", user_id: ronalyssa.id)
-top3 = Top.create(name: "SALMON PINK SWEATSHIRT", image: "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fde%2Fd6%2Fded6912e8a34645e550be2a1740156bc89063a60.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_hoodiesswetshirts_sweatshirts%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/fullscreen]", user_id: ronalyssa.id)
-top4 = Top.create(name: "BLACK DANDELION PUFFED SLEEVED SHIRT", image: "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F71%2Fb8%2F71b85a941df7be333c065c4713eef6d75082435b.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/fullscreen]", user_id: ronalyssa.id)
-top5 = Top.create(name: "PINK & BLACK TIE PUFF SLEEVED BLOUSE", image: "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F6c%2F2a%2F6c2a612eff60398415fcf940238e90fa9d4debbc.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/fullscreen]", user_id: ronalyssa.id)
-top6 = Top.create(name: "BLACK RED-STRIPED PLAID BUTTON-UP", image: "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fb0%2F76%2Fb076be08480ceb84a024fa03e7b8c996061a051c.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_shirtsblouses_shirts%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/fullscreen]", user_id: ronalyssa.id)
-top7 = Top.create(name: "RED FRILLED LONG-SLEEVED SHIRT", image: "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Ff7%2F1d%2Ff71de528a64ed00efe9f5c9d65c1818d4d57a842.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_tops_longsleeve%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/fullscreen]", user_id: ronalyssa.id)
-top8 = Top.create(name: "BLUE PADDED SHORT-SLEEVED SHIRT", image: "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Ff7%2Fa3%2Ff7a3342104419fc818f12c43d216ef2e9cd9c55a.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/fullscreen]", user_id: ronalyssa.id)
-top9 = Top.create(name: "BLUE DENIM SHIRT", image: "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F04%2F37%2F0437753a985777405c009c6babd373cf544ed513.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/fullscreen]", user_id: ronalyssa.id)
-top10 = Top.create(name: "SALMON PINK TUBE TOP", image: "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F3c%2F06%2F3c06cba0c2cbe9102523427e5fff450f8a93bdb9.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_tops_croppedtops%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/fullscreen]", user_id: ronalyssa.id)
+top2 = Top.create(name: "GREY LAVENDER HOODIE", image: "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F12%2F8a%2F128aade6353848c8130b6848771405fb3ab1a025.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]", user_id: ronalyssa.id)
+top3 = Top.create(name: "SALMON PINK SWEATSHIRT", image: "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fde%2Fd6%2Fded6912e8a34645e550be2a1740156bc89063a60.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_hoodiesswetshirts_sweatshirts%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]
+", user_id: ronalyssa.id)
+top4 = Top.create(name: "BLACK DANDELION PUFFED SLEEVED SHIRT", image: "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F71%2Fb8%2F71b85a941df7be333c065c4713eef6d75082435b.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]
+", user_id: ronalyssa.id)
+top5 = Top.create(name: "PINK & BLACK TIE PUFF SLEEVED BLOUSE", image: "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F6c%2F2a%2F6c2a612eff60398415fcf940238e90fa9d4debbc.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]", user_id: ronalyssa.id)
+top6 = Top.create(name: "BLACK RED-STRIPED PLAID BUTTON-UP", image: "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fc4%2F82%2Fc4828e02593bfd649f521b0466b13274e8cbd425.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_shirtsblouses_shirts%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]", user_id: ronalyssa.id)
+top7 = Top.create(name: "RED FRILLED LONG-SLEEVED SHIRT", image: "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F8a%2F22%2F8a228758642ea7c228953dd8af3b85128d8f1971.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_shirtsblouses_blouses%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]", user_id: ronalyssa.id)
+top8 = Top.create(name: "BLUE PADDED SHORT-SLEEVED SHIRT", image: "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Ff7%2Fa3%2Ff7a3342104419fc818f12c43d216ef2e9cd9c55a.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]", user_id: ronalyssa.id)
+top9 = Top.create(name: "BLUE DENIM SHIRT", image: "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fd6%2Fb1%2Fd6b134ee55e8c850a36d18f28cac52bd36437ef5.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]", user_id: ronalyssa.id)
+top10 = Top.create(name: "SALMON PINK TUBE TOP", image: "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F3c%2F06%2F3c06cba0c2cbe9102523427e5fff450f8a93bdb9.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_tops_croppedtops%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]", user_id: ronalyssa.id)
 top11 = Top.create(name: "BURGUNDY HOODIE", image: "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F09%2F03%2F09032c68f55890c4f163c0dd53fe487e79c146fd.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_hoodiessweatshirts_hoodies%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/fullscreen]", user_id: max.id)
 top12 = Top.create(name: "LIGHT BLUE SWEATSHIRT", image: "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fc8%2Ffc%2Fc8fc337df7a3a66bb8056e1f4d3e9b41786000e2.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/fullscreen]", user_id: max.id)
 top13 = Top.create(name: "BLACK SHORT-SLEEVED T-SHIRT", image: "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Ff5%2Fc4%2Ff5c4939114fcc731acfada4ebb68f1da42cad909.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_tshirtstanks_shortsleeve%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/fullscreen]", user_id: max.id)
@@ -63,19 +65,3 @@ bottom19 = Bottom.create(name: "BEIGE CARGO JOGGERS", image: "https://lp2.hm.com
 bottom20 = Bottom.create(name: "KHAKI GREEN CARGO PANTS", image: "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fd8%2F88%2Fd8885d64eba63a642597bc75da87363609bedec0.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_trousers_trousers_regular_all%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/fullscreen]", user_id: max.id)
 
 
-# outfit1 = Outfit.create(name: "Business Casual", top_id: top1.id, bottom_id: bottom1.id, user_id: ronalyssa.id)
-# outfit2 = Outfit.create(name: "Casual", top_id: top2.id, bottom_id: bottom2.id, user_id: ronalyssa.id)
-# outfit3 = Outfit.create(name: "Burgundy Suit", top_id: top4.id, bottom_id: bottom4.id, user_id: max.id)
-# outfit4 = Outfit.create(name: "Workout Wear", top_id: top3.id, bottom_id: bottom3.id, user_id: max.id)
-
-
-# work = Wardrobe.create(name: "Work", user_id: ronalyssa.id)
-# casual = Wardrobe.create(name: "Casual", user_id: ronalyssa.id)
-# mensWork = Wardrobe.create(name: "Men's Work", user_id: max.id)
-# mensWorkout = Wardrobe.create(name: "Men's Workout", user_id: max.id)
-
-
-# wo1 = WardrobeOutfit.create(wardrobe_id: work.id, outfit_id: outfit1.id, user_id: ronalyssa.id)
-# wo2 = WardrobeOutfit.create(wardrobe_id: casual.id, outfit_id: outfit2.id, user_id: ronalyssa.id)
-# wo3 = WardrobeOutfit.create(wardrobe_id: mensWork.id, outfit_id: outfit3.id, user_id: max.id)
-# wo4 = WardrobeOutfit.create(wardrobe_id: mensWorkout.id, outfit_id: outfit4.id, user_id: max.id)
